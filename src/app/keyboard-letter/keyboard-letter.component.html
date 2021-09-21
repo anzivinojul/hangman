@@ -1,0 +1,2 @@
+<button id="keyboardLetter" (click)="key(value)" *ngIf="!keyUsed"> {{ value }}</button>
+<button id="keyboardLetterDisabled" (click)="key(value)" *ngIf="keyUsed" disabled> {{ value }}</button>

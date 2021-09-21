@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+#keyboardLetter {
+  width: 100%;
+  height: 100%;
+  font-size: 1em !important;
+  border-radius: 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  color: #F8F005;
+  background: #050DFA;
+  transition: 1s;
+  border: 2px black solid;
+  box-shadow: 3px 3px 0 black;
+  transform: skewX(-6deg);
+  transition: 0.3s;
+}
+
+#keyboardLetter:focus {
+  outline: none;
+}
+
+#keyboardLetter:hover {
+   transition: 0.2s;
+   box-shadow: 6px 6px 0 black;
+   background: #055FFA;
+   transform: skewX(-4deg);
+}
+
+#keyboardLetterDisabled {
+  width: 100%;
+  height: 100%;
+  font-size: 1em !important;
+  border-radius: 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  color: black;
+  background: red;
+  transition: 1s;
+  border: 2px black solid;
+  box-shadow: 3px 3px 0 black;
+  transform: skewX(-6deg);
+  transition: 0.3s;
+}

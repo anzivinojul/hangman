@@ -1,0 +1,30 @@
+<div class="keyboard">
+
+  <div class="keyboardGrid">
+
+      <div class="keyboardGridFirstLine">
+      <app-keyboard-letter
+        *ngFor="let letter of keyboardLettersFirstLine; let i = index"
+        [value]="letter"
+        (inputKey)="keyPress(letter)">
+      </app-keyboard-letter>
+    </div>
+
+    <div class="keyboardGridSecondLine">
+      <app-keyboard-letter
+        *ngFor="let letter of keyboardLettersSecondLine; let i = index"
+        [value]="letter"
+        (inputKey)="keyPress(letter)">
+      </app-keyboard-letter>
+    </div>
+
+    <div class="keyboardGridThirdLine">
+      <app-keyboard-letter
+        *ngFor="let letter of keyboardLettersThirdLine; let i = index"
+        [value]="letter"
+        (inputKey)="keyPress(letter)">
+      </app-keyboard-letter>
+    </div>
+
+  </div>
+</div>
