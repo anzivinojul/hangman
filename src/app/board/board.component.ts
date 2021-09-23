@@ -31,11 +31,12 @@ export class BoardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.newGame();
-  }
-
-  ngAfterViewInit(): void {
-    this.newGame();
+    this.dictionnary();
+    this.letters = Array(this.wordLetters.length).fill(null);
+    this.errors = Array(6).fill(null);
+    this.errorCount = 0;
+    this.win = false;
+    this.lose = false;
   }
 
   getRandomInt(max: number) {

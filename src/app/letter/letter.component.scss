@@ -1,7 +1,10 @@
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  font-size: 2em;
+  font-size: 4vmin;
   background-color: #F8F005;
   border: transparent;
   border-bottom: 4px black solid;
