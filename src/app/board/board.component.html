@@ -1,43 +1,47 @@
-<div class="boxHeader">
-  <h1>Hangman by anzivinojul</h1>
-</div>
+<div class="boxPage">
 
-<div class="boxContentErrors">
-  <div class="boxError"
-    *ngFor="let error of errors;"> {{ error }}
-  </div>
-</div>
-
-<div class="boxContentCategory">
-  <h1> {{ category.toUpperCase() }} </h1>
-</div>
-
-<div class = "boxContent">
-
-  <main>
-    <app-letter
-        *ngFor="let letter of letters;"
-        [value]="letter">
-    </app-letter>
-  </main>
-
-</div>
-
-<app-keyboard (inputKey)="move($event)"></app-keyboard>
-
-<div class = "boxContentFooter">
-  <div class="wrapper">
-    <a class="button" (click) = "newGame()" href="#">
-      <span>REJOUER</span>
-    </a>
+  <div class="boxHeader">
+    <h1>Hangman by anzivinojul</h1>
   </div>
 
-  <h2 *ngIf="win">
-    Vous avez gagné!
-  </h2>
+  <div class="boxContentErrors">
+    <div class="boxError"
+      *ngFor="let error of errors;"> {{ error }}
+    </div>
+  </div>
 
-  <h2 *ngIf="lose">
-    Vous avez perdu!
-  </h2>
+  <div class="boxContentCategory">
+    <h1> Catégorie : {{ category.toUpperCase() }} </h1>
+  </div>
+
+  <div class = "boxContent">
+
+    <main>
+      <app-letter
+          *ngFor="let letter of letters;"
+          [value]="letter">
+      </app-letter>
+    </main>
+
+  </div>
+
+  <app-keyboard (inputKey)="move($event)"></app-keyboard>
+
+  <div class = "boxContentFooter">
+    <div class="wrapper">
+      <a class="button" (click) = "newGame()" href="#">
+        <span>REJOUER</span>
+      </a>
+    </div>
+
+    <h2 class = "winAlert" *ngIf="win">
+      Vous avez gagné!
+    </h2>
+
+    <h2 class = "winLose" *ngIf="lose">
+      Vous avez perdu!
+    </h2>
+  </div>
+
 </div>
 

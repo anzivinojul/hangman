@@ -1,6 +1,5 @@
 
 .keyboard {
-  padding-top: 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -9,28 +8,28 @@
 
 .keyboardGridFirstLine {
   display: grid;
-  grid-template-columns: repeat(9, 60px);
+  grid-template-columns: repeat(9, 7vmin);
   grid-gap: 8px;
 }
 
 .keyboardGridSecondLine {
   padding-top: 8px;
   display: grid;
-  grid-template-columns: repeat(9, 60px);
+  grid-template-columns: repeat(9, 7vmin);
   grid-gap: 8px;
 }
 
 .keyboardGridThirdLine {
   padding-top: 8px;
   display: grid;
-  grid-template-columns: repeat(8, 60px);
+  grid-template-columns: repeat(8, 7vmin);
   grid-gap: 8px;
   justify-content: center;
 }
 
 
 app-keyboard-letter {
-  height: 60px;
+  height: 7vmin;
   border-radius: 0px;
 }
 
